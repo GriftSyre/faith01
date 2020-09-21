@@ -1,0 +1,296 @@
+button.b1 {
+	background-color: #ffcc00;
+	border:2px #ffcc00;
+	color: #000000;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+button.button1 {border-radius: 2px;}
+button.button2 {border-radius: 4px;}
+button.button3 {border-radius: 8px;}
+button.button4 {border-radius: 12px;}
+button.button5 {border-radius: 50%;}
+
+.b2 {
+    font-family: Nexa;
+	font-size: 12px;
+	font-weight: bold;
+	border: 5px #ffcc00;
+	outline-color: #ffcc00;
+}
+
+.b01{
+	background-color: rgba(255,204,0,1);
+	color: #000000;
+	font-size: 20px;
+}
+
+input.b01{
+	background-color: rgba(255,204,0,1);
+	color: #000000;
+}
+
+input.b2 {
+    font-family: Nexa;
+	font-size: 20px;
+	font-weight: bold;
+	border: 5px #ffcc00;
+	outline-color: #ffcc00;
+}
+
+.tab { text-indent:60px }
+
+h2.color {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: #000000;
+}
+
+h2.thick {
+  font-weight: bold;
+}
+
+h1.font {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+label.font {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: black;
+  text-align: left;
+  font-size:20px;
+}
+
+textarea.font {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: black;
+  text-align: left;
+  font-size:20px;
+  background-color:#ffcc00;
+}
+
+input.font {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: black;
+  text-align: left;
+  font-size:20px;
+    background-color:#ffcc00;
+}
+
+h3 {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+p.p1 {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-size:20px;
+}
+
+p.p2 {
+  font-family: "Nexa", Nexa Bold, sans-serif;
+  color: white;
+  text-align: left;
+  font-size:20px;
+}
+
+body {
+  background-image: url("MAINbg.png");
+  background-color: #cccccc;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+header
+{
+    background-color:rgba(0,0,0,.3);
+}
+
+header.fb
+{
+    background-color:rgba(255,204,0,1);
+}
+
+footer.fb
+{
+    background-color:rgba(255,204,0,1);
+}
+
+header.h01
+{
+    background-color:rgba(0,0,0,.3);
+	border-radius: 40px;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-right:2%;
+	padding-left:2%;
+}
+footer
+{
+    background-color:rgba(0,0,0,.3);
+}
+
+ul.li{
+	font-size:16px;
+}
+
+.mycontent-left {
+  border-right: 3px solid #ffcc00;
+}
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
+
+$('#yourPopover').popover({
+  sanitize: false,
+})
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #ffcc00; /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  text-align: center;
+  font-family: Nexa;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  background-color:#ffcc00;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+document.getElementById('vid').play();
+
+var vid = document.getElementById("myVideo");
+vid.autoplay = true;
+vid.load();
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
